@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Interactive Graph</title>
+	<!-- Load Plotly library -->
+	<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+	<script src="https://d3js.org/d3.v7.min.js"></script>
+	<script src="visuals_1.js"></script>
+</head>
+
+
+<body>
+	<div id="visuals_1">
+		<h2>Select a year:</h2>
+		<h4>Displays Programming Languages that have more than 0 Users AND 0 Number of Jobs</h4>
+
+		<select id="year-dropdown"></select>
+
+		<div id="chart-languages" style="width: 50%;"></div>
+		<h5 id="total-languages"></h5>
+		<h5 id="total-languages-filtered"></h5>
+
+		<div id="chart-users" style="width: 50%; height: 400px;"></div>
+		<h5 id="total-users"></h5>
+
+		<div id="chart-jobs" style="width: 50%; height: 400px;"></div>
+		<h5 id="total-jobs"></h5>
+	</div>
+</body>
+
+
+</html>
