@@ -11,18 +11,18 @@ def index():
     return render_template("index.html")
 
 @app.route("/api/language.json")
-def summary():
+def language():
     results = engine.execute("SELECT * FROM programming_language")
     return jsonify([dict(_) for _ in results])
 
 @app.route("/api/visual1.json")
-def summary():
+def visual1():
     results = engine.execute("SELECT * FROM programming_language")
     return jsonify([dict(_) for _ in results])
 
 if __name__ == '__main__':
     app.run(debug=True)
-    
+
 
 
 
