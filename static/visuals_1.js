@@ -1,4 +1,5 @@
-d3.json("data.json").then(function(jsonData) {
+d3.json("http://127.0.0.1:5000/api/language.json")
+.then(function(jsonData) {
     // Extract the unique years from the data
     var years = [...new Set(jsonData.map(item => item.Year))];
 

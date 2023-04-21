@@ -1,5 +1,4 @@
-fetch('data.json')
-  .then(response => response.json())
+d3.json("http://127.0.0.1:5000/api/language.json")
   .then(data => {
     // Filter and sort the data to get the top 10 programming languages based on rank
     let topLanguages = data.filter(d => d.Rank <= 10)
